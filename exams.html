@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Guidance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Professional Guidance</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="entrance-exams" class="scroll-reveal">
+            <h1>Key Entrance Exams</h1>
+            <p>Find important entrance exams for various streams.</p>
+            <div class="filter-options">
+                <label for="exam-stream-select">Filter by Stream:</label>
+                <select id="exam-stream-select">
+                    <option value="all">All</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="medical">Medical</option>
+                    <option value="law">Law</option>
+                </select>
+            </div>
+            <div id="exams-container">
+                <!-- Exam cards will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Career Guidance. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="exams.js"></script>
+</body>
+</html>

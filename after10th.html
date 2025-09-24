@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Guidance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="webgl-background"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Professional Guidance</div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Subject Choices for 10th Grade Section -->
+        <section id="subject-choices-10th" class="scroll-reveal">
+            <h1>Subject Choices After 10th Grade</h1>
+            <p>Choosing the right stream after 10th grade is crucial for your career path. Explore the options and what they entail.</p>
+            <div class="subject-choices-container">
+                <div class="subject-choice-card scroll-reveal">
+                    <h2>Science Stream</h2>
+                    <ul>
+                        <li>**Focus:** Physics, Chemistry, Biology/Math</li>
+                        <li>**Career Paths:** Engineering, Medicine, Research, IT</li>
+                        <li>**Key Skills:** Analytical thinking, problem-solving, logical reasoning</li>
+                    </ul>
+                </div>
+                <div class="subject-choice-card scroll-reveal">
+                    <h2>Commerce Stream</h2>
+                    <ul>
+                        <li>**Focus:** Accountancy, Business Studies, Economics, Math</li>
+                        <li>**Career Paths:** Finance, Accounting, Business Management, Marketing</li>
+                        <li>**Key Skills:** Financial literacy, organizational skills, critical thinking</li>
+                    </ul>
+                </div>
+                <div class="subject-choice-card scroll-reveal">
+                    <h2>Arts/Humanities Stream</h2>
+                    <ul>
+                        <li>**Focus:** History, Political Science, Geography, Psychology, Literature</li>
+                        <li>**Career Paths:** Civil Services, Journalism, Law, Teaching, Design</li>
+                        <li>**Key Skills:** Communication, creativity, critical analysis, research</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Polytechnic Courses Section -->
+        <section id="polytechnic-courses" class="scroll-reveal">
+            <h1>Explore Polytechnic Courses</h1>
+            <p>Polytechnic courses offer hands-on training and direct entry into various technical careers after 10th or 12th grade.</p>
+            <div class="polytechnic-cards-container">
+                <div class="polytechnic-card scroll-reveal">
+                    <h2>Diploma in Engineering</h2>
+                    <ul>
+                        <li>**Fields:** Mechanical, Civil, Electrical, Computer Science, Electronics</li>
+                        <li>**Eligibility:** 10th pass</li>
+                        <li>**Career:** Junior Engineer, Technician roles</li>
+                    </ul>
+                    <a href="https://www.shiksha.com/engineering/articles/polytechnic-courses-after-10th-top-colleges-career-opportunities-exams-blogId-208562" class="button" target="_blank">View Details</a>
+                </div>
+                <div class="polytechnic-card scroll-reveal">
+                    <h2>Diploma in Business Administration</h2>
+                    <ul>
+                        <li>**Fields:** Marketing, Finance, HR, Operations</li>
+                        <li>**Eligibility:** 10th/12th pass</li>
+                        <li>**Career:** Business Analyst, Office Manager, Marketing Assistant</li>
+                    </ul>
+                    <a href="https://www.collegedekho.com/articles/list-of-polytechnic-courses/" class="button" target="_blank">View Details</a>
+                </div>
+                <div class="polytechnic-card scroll-reveal">
+                    <h2>Diploma in Hotel Management</h2>
+                    <ul>
+                        <li>**Fields:** Food & Beverage, Front Office, Housekeeping, Culinary Arts</li>
+                        <li>**Eligibility:** 10th/12th pass</li>
+                        <li>**Career:** Hotel Operations, Chef, Event Management</li>
+                    </ul>
+                    <a href="https://idreamcareer.com/blog/polytechnic-courses-after-10th/" class="button" target="_blank">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vocational Courses Section -->
+        <section id="vocational-courses" class="scroll-reveal">
+            <h1>Explore Vocational Courses</h1>
+            <p>Vocational courses provide practical skills for specific trades, offering direct entry into various industries after 10th grade.</p>
+            <div class="polytechnic-cards-container">
+                <div class="polytechnic-card scroll-reveal">
+                    <h2>Certificate in Electrician</h2>
+                    <ul>
+                        <li>**Duration:** 1 Year</li>
+                        <li>**Eligibility:** 10th Pass</li>
+                        <li>**Career:** Electrician, Electrical Technician</li>
+                    </ul>
+                    <a href="https://www.aicvps.org/CourseList/Vocational-Courses-After-10th-%281-Year%29-3048-4201" class="button" target="_blank">View Details</a>
+                </div>
+                <div class="polytechnic-card scroll-reveal">
+                    <h2>Diploma in Nanny Care</h2>
+                    <ul>
+                        <li>**Duration:** 2 Years</li>
+                        <li>**Eligibility:** 10th Pass</li>
+                        <li>**Career:** Nanny, Childcare Professional</li>
+                    </ul>
+                    <a href="https://nctaindia.in/courses?course_id=1767" class="button" target="_blank">View Details</a>
+                </div>
+                <div class="polytechnic-card scroll-reveal">
+                    <h2>Diploma in Automobile</h2>
+                    <ul>
+                        <li>**Duration:** 2 Years</li>
+                        <li>**Eligibility:** 10th Pass</li>
+                        <li>**Career:** Automobile Technician, Service Advisor</li>
+                    </ul>
+                    <a href="https://www.aicvps.org/CourseList/Vocational-Courses-After-10th-%282-Year%29-3048-4202" class="button" target="_blank">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Career Guidance. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Three.js Background Animation
+            const webglBackground = document.getElementById('webgl-background');
+            if (webglBackground) {
+                const scene = new THREE.Scene();
+                const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+                const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                webglBackground.appendChild(renderer.domElement);
+
+                // Add some basic shapes for the background
+                const geometry = new THREE.DodecahedronGeometry(1, 0);
+                const material = new THREE.MeshBasicMaterial({ color: 0x6dd5ed, wireframe: true, transparent: true, opacity: 0.5 });
+
+                const meshCount = 50;
+                const meshes = [];
+
+                for (let i = 0; i < meshCount; i++) {
+                    const mesh = new THREE.Mesh(geometry, material);
+                    mesh.position.set(
+                        (Math.random() - 0.5) * 20,
+                        (Math.random() - 0.5) * 20,
+                        (Math.random() - 0.5) * 20
+                    );
+                    mesh.rotation.set(
+                        Math.random() * Math.PI,
+                        Math.random() * Math.PI,
+                        Math.random() * Math.PI
+                    );
+                    mesh.scale.setScalar(Math.random() * 0.5 + 0.1);
+                    scene.add(mesh);
+                    meshes.push(mesh);
+                }
+
+                camera.position.z = 5;
+
+                function animate() {
+                    requestAnimationFrame(animate);
+
+                    meshes.forEach(mesh => {
+                        mesh.rotation.x += 0.001;
+                        mesh.rotation.y += 0.002;
+                        mesh.position.x += 0.005 * (mesh.userData.directionX || 1);
+                        mesh.position.y += 0.005 * (mesh.userData.directionY || 1);
+
+                        // Simple boundary check and reverse direction
+                        if (mesh.position.x > 10 || mesh.position.x < -10) {
+                            mesh.userData.directionX *= -1;
+                        }
+                        if (mesh.position.y > 10 || mesh.position.y < -10) {
+                            mesh.userData.directionY *= -1;
+                        }
+                    });
+
+                    renderer.render(scene, camera);
+                }
+
+                animate();
+
+                // Handle window resize
+                window.addEventListener('resize', () => {
+                    camera.aspect = window.innerWidth / window.innerHeight;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize(window.innerWidth, window.innerHeight);
+                });
+            }
+
+            const scrollElements = document.querySelectorAll('.scroll-reveal');
+
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <=
+                    (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add('active');
+            };
+
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.25)) {
+                        displayScrollElement(el);
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', handleScrollAnimation);
+            handleScrollAnimation(); // Initial check on load
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Guidance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Professional Guidance</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="aptitude-quiz" class="scroll-reveal">
+            <h1>Aptitude Quiz</h1>
+            <p>Answer a few questions to get personalized insights into potential career paths.</p>
+            <form id="quiz-form">
+                <div class="question-block">
+                    <p>1. Which of these activities do you enjoy the most?</p>
+                    <label><input type="radio" name="q1" value="creative"> <span>Creative arts (writing, painting, music)</span></label><br>
+                    <label><input type="radio" name="q1" value="analytical"> <span>Solving complex puzzles or logical problems</span></label><br>
+                    <label><input type="radio" name="q1" value="social"> <span>Helping and interacting with people)</span></label><br>
+                </div>
+                
+                <div class="question-block">
+                    <p>2. What kind of school subjects do you find most engaging?</p>
+                    <label><input type="radio" name="q2" value="science"> <span>Science (Physics, Chemistry, Biology)</span></label><br>
+                    <label><input type="radio" name="q2" value="math"> <span>Mathematics and problem-solving)</span></label><br>
+                    <label><input type="radio" name="q2" value="humanities"> <span>History, Literature, Social Sciences)</span></label><br>
+                </div>
+
+                <div class="question-block">
+                    <p>3. What's your ideal work environment?</p>
+                    <label><input type="radio" name="q3" value="independent"> <span>Independent work, self-directed projects)</span></label><br>
+                    <label><input type="radio" name="q3" value="team"> <span>Collaborative team-based projects)</span></label><br>
+                    <label><input type="radio" name="q3" value="dynamic"> <span>Fast-paced, constantly changing environment)</span></label><br>
+                </div>
+
+                <button type="submit">Get My Results</button>
+            </form>
+            <div id="quiz-result">
+                <!-- Quiz results will be displayed here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Career Guidance. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

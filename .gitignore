@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Node.js
+# attention: these are all node built into folders so please double check if you want to include all
+# node_modules
+# jspm_packages
+# bower_components
+
+# Runtime data
+.eslintcache
+*.tgz
+.env
+
+# Optional npm cache
+.npm/
+
+# Optional pnpm cache
+.pnpm-store/
+
+# Optional Read the Docs directory
+.readthedocs/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.filters
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

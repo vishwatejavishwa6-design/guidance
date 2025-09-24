@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Guidance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Professional Guidance</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="college-list" class="scroll-reveal">
+            <h1>Top Government Colleges</h1>
+            <p>Explore leading government colleges across various streams.</p>
+            <div class="filter-options">
+                <label for="stream-select">Filter by Stream:</label>
+                <select id="stream-select">
+                    <option value="all">All</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="medical">Medical</option>
+                    <option value="arts">Arts</option>
+                    <option value="degree">Degree</option>
+                </select>
+            </div>
+            <div id="colleges-container">
+                <!-- College cards will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Career Guidance. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="colleges.js"></script>
+</body>
+</html>
