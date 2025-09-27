@@ -64,7 +64,12 @@
     <script src="data.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
+        (function(){
+            emailjs.init("pHzHQZCWa_7b10iNX"); // Replace with your Public Key
+        })();
+
         document.addEventListener('DOMContentLoaded', () => {
             // Three.js Background Animation
             const webglBackground = document.getElementById('webgl-background');
@@ -182,6 +187,31 @@
 
             window.addEventListener('scroll', handleScrollAnimation);
             handleScrollAnimation(); // Initial check on load
+
+            // Contact Form Logic
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault(); // Prevent default form submission
+
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const question = document.getElementById('question').value;
+
+                    if (name && email && question) {
+                        emailjs.sendForm('service_6azpwvn', 'template_9jwqp2q', contactForm)
+                            .then(() => {
+                                alert('Your message has been sent successfully!');
+                                contactForm.reset(); // Clear the form
+                            }, (error) => {
+                                console.error('Failed to send message:', error);
+                                alert('Failed to send message. Please try again later.');
+                            });
+                    } else {
+                        alert('Please fill in all fields.');
+                    }
+                });
+            }
         });
     </script>
 </body>

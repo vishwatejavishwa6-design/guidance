@@ -207,6 +207,63 @@
 
             window.addEventListener('scroll', handleScrollAnimation);
             handleScrollAnimation(); // Initial check on load
+
+            // Quiz Logic
+            const quizForm = document.getElementById('career-quiz-form');
+            const quizResults = document.getElementById('quiz-results');
+            const suggestedCareersList = document.getElementById('suggested-careers');
+            const retakeQuizButton = document.getElementById('retake-quiz');
+
+            quizForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const answers = {
+                    q1: quizForm.elements.q1.value,
+                    q2: quizForm.elements.q2.value,
+                    q3: quizForm.elements.q3.value,
+                    q4: quizForm.elements.q4.value,
+                    q5: quizForm.elements.q5.value,
+                };
+
+                const careerScores = {
+                    analytical: 0,
+                    creative: 0,
+                    social: 0,
+                    practical: 0,
+                };
+
+                for (const question in answers) {
+                    const answer = answers[question];
+                    if (answer) {
+                        careerScores[answer]++;
+                    }
+                }
+
+                const sortedCareers = Object.entries(careerScores).sort(([, a], [, b]) => b - a);
+
+                suggestedCareersList.innerHTML = ''; // Clear previous results
+
+                // Display top 2-3 career suggestions
+                for (let i = 0; i < Math.min(sortedCareers.length, 3); i++) {
+                    const [careerType, score] = sortedCareers[i];
+                    if (score > 0) { // Only show careers with at least one match
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `You show strong interest in ${careerType.charAt(0).toUpperCase() + careerType.slice(1)} fields.`;
+                        suggestedCareersList.appendChild(listItem);
+                    }
+                }
+
+                quizForm.style.display = 'none';
+                quizResults.style.display = 'block';
+            });
+
+            retakeQuizButton.addEventListener('click', () => {
+                quizForm.reset();
+                quizResults.style.display = 'none';
+                quizForm.style.display = 'block';
+                suggestedCareersList.innerHTML = '';
+            });
+
         });
     </script>
 </body>

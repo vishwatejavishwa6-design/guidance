@@ -1,0 +1,16 @@
+This is a sample resume. Replace this content with your actual resume details.
+
+[Your Name]
+[Your Contact Information]
+[Your Summary]
+
+Experience:
+- [Job Title], [Company], [Dates]
+  - [Responsibility 1]
+  - [Responsibility 2]
+
+Education:
+- [Degree], [University], [Dates]
+
+Skills:
+- [Skill 1], [Skill 2], [Skill 3]
