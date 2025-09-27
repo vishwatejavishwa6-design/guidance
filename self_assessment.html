@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Advisor</title>
+    <title>Self-Assessment Quiz - Career Advisor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,16 +12,73 @@
     <header>
         <nav>
             <div class="logo">Career Advisor</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="homepage-intro" class="hero scroll-reveal">
-            <h1>Welcome to Career Advisor!</h1>
-            <p>Your one-stop solution for navigating your academic and career journey. Explore hobbies, colleges, exams, scholarships, and more.</p>
-            <button onclick="location.href='features.html'">Get Started</button>
-        </section>
+        <section id="self-assessment" class="bank-page-section scroll-reveal">
+            <h1>Career Interest Self-Assessment Quiz</h1>
+            <p>Answer these quick questions to get an idea of potential career fields that might suit your interests!</p>
 
+            <form id="career-quiz-form" class="quiz-form">
+                <div class="question-block">
+                    <p>1. Which of these activities do you enjoy the most?</p>
+                    <label><input type="radio" name="q1" value="analytical"> Solving complex puzzles and logical problems.</label>
+                    <label><input type="radio" name="q1" value="creative"> Creating art, writing stories, or designing new things.</label>
+                    <label><input type="radio" name="q1" value="social"> Helping people, teaching, or working in a community.</label>
+                    <label><input type="radio" name="q1" value="practical"> Building, repairing, or working with tools and machinery.</label>
+                </div>
+
+                <div class="question-block">
+                    <p>2. What kind of school subjects do you typically excel in or find most interesting?</p>
+                    <label><input type="radio" name="q2" value="analytical"> Mathematics, Science (Physics, Chemistry).</label>
+                    <label><input type="radio" name="q2" value="creative"> Literature, History, Fine Arts.</label>
+                    <label><input type="radio" name="q2" value="social"> Biology, Psychology, Sociology, Political Science.</label>
+                    <label><input type="radio" name="q2" value="practical"> Vocational subjects, Computer Applications, Engineering Drawing.</label>
+                </div>
+
+                <div class="question-block">
+                    <p>3. When working on a project, what role do you prefer?</p>
+                    <label><input type="radio" name="q3" value="analytical"> Analyzing data and finding optimal solutions.</label>
+                    <label><input type="radio" name="q3" value="creative"> Brainstorming new ideas and making things visually appealing.</label>
+                    <label><input type="radio" name="q3" value="social"> Leading the team and facilitating communication.</label>
+                    <label><input type="radio" name="q3" value="practical"> Executing tasks and making sure everything runs smoothly.</label>
+                </div>
+
+                <div class="question-block">
+                    <p>4. What kind of environment do you prefer to work in?</p>
+                    <label><input type="radio" name="q4" value="analytical"> A quiet office or lab where I can focus deeply.</label>
+                    <label><input type="radio" name="q4" value="creative"> A dynamic and inspiring space with creative freedom.</label>
+                    <label><input type="radio" name="q4" value="social"> A collaborative setting, interacting with many people.</label>
+                    <label><input type="radio" name="q4" value="practical"> Outdoors or in a workshop, working with tangible objects.</label>
+                </div>
+
+                <div class="question-block">
+                    <p>5. What motivates you most in a potential career?</p>
+                    <label><input type="radio" name="q5" value="analytical"> Solving challenging problems and continuous learning.</label>
+                    <label><input type="radio" name="q5" value="creative"> Expressing myself and producing innovative work.</label>
+                    <label><input type="radio" name="q5" value="social"> Making a positive impact on people's lives.</label>
+                    <label><input type="radio" name="q5" value="practical"> Seeing tangible results of my efforts and hands-on work.</label>
+                </div>
+
+                <button type="submit" class="button">Get My Career Suggestions</button>
+            </form>
+
+            <div id="quiz-results" class="quiz-results-card" style="display: none;">
+                <h2>Your Potential Career Fields:</h2>
+                <ul id="suggested-careers">
+                    <!-- Results will be displayed here -->
+                </ul>
+                <p>These are general suggestions. For a deeper understanding, explore our detailed career paths!</p>
+                <button id="retake-quiz" class="button">Retake Quiz</button>
+            </div>
+        </section>
     </main>
 
     <footer>

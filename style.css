@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--color-background-light); /* Changed to light grey */
+    background-color: white; /* Changed to white */
     background-image: none; /* Remove gradient */
     background-size: auto; /* Reset background size */
     animation: none; /* Remove animation */
@@ -164,7 +164,7 @@ nav ul li a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZwdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIHN0cm9rZS13aWR0aD0iMSI+PHBhdGggZD0iTTMwLjA2OSA5LjAxOWwuODQ5IDEuMzFhMzAuMDAyIDMwLjAwMiAwIDAgMSAyOC4yMyAyNy4yODJsLS4xMDktLjk3M0E0MC4wMDIgNDAuMDAyIDAgMCAwIDMwLjA2OSA5LjAxOWwuMDAyLS4wMTh6Ii8+PHBhdGggZD0iTTU0LjQ0NSAzOC40NjlhMjAuMDAyIDIwLjAwMiAwIDAgMS0yNC4zNy43ODRsLS45MTggMS4zMDZhMjkuOTk3IDI5Ljk5NyAwIDAgMCAzNy40NDUtNC4xMTdMLjkzNS0uMzk0eiIvPjxwYXRoIGQ9Ik0yOS45OTcgMzAuMDAybC0uNTE3LS44NmEzMC4wMzEgMzAuMDMxIDAgMCAxLS4zNzktMjkuMTQxbC45NzEtLjI1NWEzOS45OTcgMzkuOTk3IDAgMCAwIC40ODYgMzguOTA4bC0uODYxLjUxNHoiLz48L2c+PC9zdmc+');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZwdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIHN0cm9rZS13aWR0aD0iMSI+PHBhdGggZD0iTTMwLjA2OSA5LjAxOWwuODQ5IDEuMzFhMzAuMDAyIDMwLjAwMiAwIDAgMSAyOC4yMyAyNy4yODJsLS4xMDktLjk3M0E0MC4wMDIgNDAuMDAyIDAgMCAwIDMwLjA2OSA5LjAxOWwuMDAyLS4wMTh6Ii8+PHBhdGggZD0iTTU0LjQ0NSAzOC40NjlhMjAuMDAyIDIwLjAwMiAwIDAgMS0yNC4zNy43ODRsLS45MTggMS4zMDZhMjkuOTk3IDI5Ljk5NyAwIDAgMCAzNy40NDUtNC4xMTdMLjkzNS0uMzk0eiIvPjxwYXRoIGQ9Ik0yOS45OTcgMzAuMDAybC0uNTE3LS44NmEzMC4wMzEgMzAuMDAzMSAwIDAgMS0uMzc5LTI5LjE0MWwuOTcxLS4yNTVhMzkuOTk3IDM5Ljk5NyAwIDAgMCAuNDg2IDM4LjkwOGwtLjg2MS41MTR6Ii8+PC9nPg==');
     background-repeat: repeat;
     opacity: 0.1;
     z-index: 0;
@@ -564,9 +564,9 @@ footer {
 
 /* General Content Section Styling */
 section {
-    background-color: var(--color-white);
+    background-color: #fefefe; /* Very light, almost white background */
     border-radius: 10px;
-    box-shadow: 0 4px 8px var(--color-shadow-light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03); /* Subtle shadow */
     padding: 2.5rem;
     margin-bottom: 2rem;
     text-align: left;
@@ -1364,4 +1364,709 @@ section a:hover {
 .subject-choice-card.scroll-reveal,
 .polytechnic-card.scroll-reveal {
     transition-delay: calc(var(--animation-order, 0) * 0.15s + 0.1s);
+}
+
+/* Styling for bank page section */
+.bank-page-section {
+    background-color: white; /* White background for the section */
+    color: var(--color-text-dark);
+    text-align: center;
+    padding: 3rem 2rem; /* Consistent padding */
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.bank-page-section h1 {
+    font-size: 2.8rem;
+    color: var(--color-primary); /* Use primary color for heading */
+    margin-bottom: 1.5rem;
+    text-shadow: none; /* Remove text shadow */
+}
+
+.bank-page-section h2 {
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bank-page-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+}
+
+.bank-page-section ul {
+    list-style: disc inside;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.bank-page-section ul li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.bank-page-section a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.bank-page-section a:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+.bank-page-section .course-category {
+    background-color: var(--color-white); /* White background for each course category box */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bank-page-section .course-category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.bank-page-section .course-category h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+}
+
+.bank-page-section .course-category p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-text-dark);
+    margin-bottom: 0.7rem;
+}
+
+.bank-page-section .course-category ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    margin: 0.8rem 0;
+}
+
+.bank-page-section .course-category ul li {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--color-text-medium);
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-left: 1.5rem; /* Indent for custom bullet */
+}
+
+.bank-page-section .course-category ul li::before {
+    content: '•'; /* Custom bullet point */
+    color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bank-page-section .course-category strong {
+    color: var(--color-secondary);
+}
+
+/* Styling for Why Choose section list */
+.bank-page-section #why-choose-bank-exams ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bank-page-section #why-choose-bank-exams ul li {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    position: relative;
+    padding-left: 3rem; /* Space for icon */
+    display: flex;
+    align-items: center;
+}
+
+.bank-page-section #why-choose-bank-exams ul li::before {
+    content: '✅'; /* Checkmark icon */
+    position: absolute;
+    left: 1rem;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bank-page-section #why-choose-bank-exams ul li strong {
+    color: var(--color-primary);
+    font-size: 1.05rem;
+}
+
+/* Styling for Career Paths Section */
+.career-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.career-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--color-shadow-medium);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 350px; /* Ensure cards have consistent minimum height */
+}
+
+.career-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px var(--color-shadow-strong);
+}
+
+.career-card h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.career-card p {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.career-card p strong {
+    color: var(--color-secondary);
+}
+
+/* Styling for Courses & Education Section */
+.courses-section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.course-info-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--color-shadow-medium);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 250px; /* Consistent height for cards */
+}
+
+.course-info-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px var(--color-shadow-strong);
+}
+
+.course-info-card h2 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.course-info-card ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.course-info-card ul li {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.course-info-card ul li strong {
+    color: var(--color-secondary);
+}
+
+.course-info-card p.note {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-top: auto;
+    font-style: italic;
+}
+
+/* Styling for Skill Development Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.skill-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--color-shadow-medium);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 280px; /* Consistent height */
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px var(--color-shadow-strong);
+}
+
+.skill-card h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.skill-card p strong {
+    color: var(--color-secondary);
+}
+
+.skill-card ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.skill-card ul li {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.skill-card ul li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.skill-card ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Self-Assessment Quiz Section */
+.quiz-form {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--color-shadow-medium);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.question-block {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.question-block:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.question-block p {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.question-block label {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    cursor: pointer;
+}
+
+.question-block input[type="radio"] {
+    margin-right: 0.8rem;
+    transform: scale(1.1);
+    cursor: pointer;
+    accent-color: var(--color-secondary); /* Highlight radio button */
+}
+
+.quiz-form .button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+    width: fit-content;
+    margin: 2.5rem auto 0 auto;
+}
+
+.quiz-form .button:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-results-card {
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #b3e0ff; /* Blue border */
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 10px var(--color-shadow-light);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiz-results-card h2 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.quiz-results-card ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-results-card ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text-dark);
+    margin-bottom: 0.7rem;
+}
+
+.quiz-results-card p {
+    font-size: 1rem;
+    color: var(--color-text-medium);
+    margin-top: 1.5rem;
+}
+
+.quiz-results-card .button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 2rem;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiz-results-card .button:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Resources Section */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.resource-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--color-shadow-medium);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 250px; /* Consistent height for cards */
+}
+
+.resource-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px var(--color-shadow-strong);
+}
+
+.resource-card h2 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.resource-card p {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.resource-card ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.resource-card ul li {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.resource-card .button {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: auto;
+}
+
+.resource-card .button:hover {
+    background-color: #d15050; /* Slightly darker red on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card p.note {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Styling for Contact & Mentorship Section */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 2rem;
+}
+
+.contact-form-card, .mentorship-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--color-shadow-medium);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact-form-card:hover, .mentorship-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px var(--color-shadow-strong);
+}
+
+.contact-form-card h2, .mentorship-card h2 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 0.8rem 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    background-color: #fcfcfc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2); /* Soft focus glow */
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 1.5rem;
+    width: auto; /* Allow button to size itself */
+    align-self: flex-end;
+}
+
+.contact-form .button:hover {
+    background-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mentorship-card p {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.mentorship-card .button {
+    background-color: #4CAF50; /* Green for booking */
+    color: var(--color-white);
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: auto;
+}
+
+.mentorship-card .button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mentorship-card p.note {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* General responsive adjustments for new card grids */
+@media (max-width: 768px) {
+    .career-category-grid,
+    .courses-section-grid,
+    .skills-grid,
+    .resources-grid,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .career-card, .course-info-card, .skill-card, .resource-card, .contact-form-card, .mentorship-card {
+        min-height: auto; /* Allow height to adjust on smaller screens */
+        padding: 1.5rem;
+    }
+
+    .quiz-form, .quiz-results-card {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .question-block p {
+        font-size: 1.05rem;
+    }
+
+    .question-block label {
+        font-size: 0.95rem;
+    }
+
+    .quiz-form .button,
+    .quiz-results-card .button {
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: calc(100% - 1.5rem); /* Adjust for padding on smaller screens */
+    }
 }

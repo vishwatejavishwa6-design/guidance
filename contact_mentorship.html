@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Advisor</title>
+    <title>Contact & Mentorship - Career Advisor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,16 +12,48 @@
     <header>
         <nav>
             <div class="logo">Career Advisor</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="homepage-intro" class="hero scroll-reveal">
-            <h1>Welcome to Career Advisor!</h1>
-            <p>Your one-stop solution for navigating your academic and career journey. Explore hobbies, colleges, exams, scholarships, and more.</p>
-            <button onclick="location.href='features.html'">Get Started</button>
-        </section>
+        <section id="contact-mentorship" class="bank-page-section scroll-reveal">
+            <h1>Get in Touch & Seek Mentorship</h1>
+            <p>We are here to help you navigate your career journey. Feel free to contact us or book a free consultation.</p>
 
+            <div class="contact-container">
+                <div class="contact-form-card">
+                    <h2>Contact Us</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="question">Your Question:</label>
+                            <textarea id="question" name="question" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="mentorship-card">
+                    <h2>Book a Free Consultation</h2>
+                    <p>Schedule a 15-minute introductory consultation to discuss your career goals and how we can assist you.</p>
+                    <a href="https://calendar.google.com/calendar/u/0/r" target="_blank" class="button">Book Consultation (Google Meet)</a>
+                    <p class="note"><em>Note: This is a placeholder link. In a real scenario, you'd link to a specific booking page (e.g., Calendly, Google Calendar).</em></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
